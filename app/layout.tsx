@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RutaViva — Driver Data Control",
+  title: "RutaViva — Control de datos del conductor",
   description:
-    "An anonymous, simulated road-safety reporting prototype for colectivo drivers.",
+    "Prototipo simulado para reportar riesgos viales de forma anónima en rutas de colectivo.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="es-MX"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

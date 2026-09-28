@@ -182,6 +182,7 @@ export default function Home() {
                 <div className="input-meta"><span className={report.length > MAX_REPORT_LENGTH ? "length-count over-limit" : "length-count"}>{report.length}/{MAX_REPORT_LENGTH} characters</span><span>Don’t include names or plates</span></div>
                 {error && <p className="form-error" role="alert">{error}</p>}
                 <div className="location-preview"><span className="location-preview-icon"><PinIcon /></span><span><strong>Approximate location attached</strong><small>Av. Insurgentes Sur · Col. Roma · simulated</small></span><span className="approx-label">Approx.</span></div>
+                <p className="tracking-note">Approximate report location only. RutaViva does not continuously track the driver.</p>
                 <div className="classification"><span className="classification-mark">AI</span><span><strong>Simulated AI classification</strong><small>{report.trim() ? category : "Category appears when you add a report"}</small></span><span className="category-chip">{report.trim() ? category : "Pending"}</span></div>
                 <div className="dialog-actions"><button className="text-button" type="button" onClick={closeReport}>Cancel</button><button className="primary-button" type="button" onClick={continueToReview}>Review privacy <span aria-hidden="true">→</span></button></div>
               </>
